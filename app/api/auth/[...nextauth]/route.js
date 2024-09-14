@@ -15,4 +15,5 @@ const handler = NextAuth({
   async signIn({ profile }) {},
 });
 
+// exporting auth
 export { handler as GET, handler as POST };
