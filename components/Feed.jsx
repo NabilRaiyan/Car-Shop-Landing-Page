@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-// Arrow function
+// Feed component
 const Feed = () => {
   return (
     <div>
