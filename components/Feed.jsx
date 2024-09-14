@@ -8,4 +8,5 @@ const Feed = () => {
   )
 }
 
+// exporting Feed
 export default Feed
