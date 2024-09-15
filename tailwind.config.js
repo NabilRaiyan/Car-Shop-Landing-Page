@@ -13,8 +13,12 @@ module.exports = {
       },
       colors: {
         'primary-orange': '#FF5722',
+<<<<<<< HEAD
       },
       
+=======
+      }
+>>>>>>> 8b8c914 (creating project)
     },
   },
   plugins: [],
