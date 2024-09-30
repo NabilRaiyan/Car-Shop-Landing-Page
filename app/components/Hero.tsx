@@ -1,3 +1,6 @@
+// until 47 min
+// Link: https://www.youtube.com/watch?v=pUNSHPyVryU
+
 "use client"
 
 import Image from "next/image"
