@@ -5,7 +5,7 @@ import { Combobox, Transition, ComboboxButton, ComboboxInput, ComboboxOptions, C
 import Image from "next/image"
 import { useState, Fragment } from "react";
 import { manufacturers } from "@/constants";
-
+import React from "react";
 
 
 
@@ -26,8 +26,8 @@ const SearchManufacturer = ({manufacturer, setManufacturer}: searchManufacturerP
               <Image src="/car-logo.svg" alt="car-logo" width={20} height={20} className="ml-4" />
             </ComboboxButton>
             <ComboboxInput className="search-manufacturer__input" 
-                            placeholder="Volkswagen" displayValue={(manufacturer:string)=>{
-                              manufacturer
+                            placeholder="Volkswagen..." displayValue={(item:string)=>{
+                              item
                             }} onChange={(e)=> setQuery(e.target.value)} />
 
         <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100"
@@ -40,10 +40,21 @@ const SearchManufacturer = ({manufacturer, setManufacturer}: searchManufacturerP
                       `relative search-manufacturer__option ${active ? 'bg-primary-blue text-white' : 'text-gray-900'}`}
                       value={item}
                     >
-                      {item}
+                      {({ selected, active }) => (
+                        <>
+                          <span className={`block truncate ${selected ? "font-medium" : "font-normal"}`}>
+                            {item}
+                          </span>
+
+                          {/* Show an active blue background color if the option is selected */}
+                          {selected ? (
+                            <span className={`absolute inset-y-0 left-0 flex items-center pl-3 ${active? "text-white": "text-pribg-primary-purple"}`}
+                            ></span>
+                          ) : null}
+                        </>
+                    )}
                     </ComboboxOption>
                   ))
-                
               }
           </ComboboxOptions>
 
