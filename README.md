@@ -24,3 +24,6 @@ Welcome to the Car Shop Landing Page! This is a responsive and dynamic web appli
        cd car-shop-landing-page
        npm install
    ```
+
+ - Run the development server: ``` npm run dev ```
+ - Now, visit ```http://localhost:3000``` in your browser to see the car shop landing page in action!
