@@ -13,3 +13,14 @@ Welcome to the Car Shop Landing Page! This is a responsive and dynamic web appli
 - **Next.js:** A React framework for building static and dynamic websites.
 - **Tailwind CSS:** A utility-first CSS framework for fast and responsive UI design.
 - **Car API by API Ninja:** A free API that provides detailed car data like brand, model, year, fuel type, and more.
+
+## Getting Started 🏁
+ **To get started with this project locally, follow these steps:**
+ - Clone the repository:
+   ```https://github.com/NabilRaiyan/Car-Shop.git```
+ - Install dependencies:
+   
+   ```
+       cd car-shop-landing-page
+       npm install
+   ```
