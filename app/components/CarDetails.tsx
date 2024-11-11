@@ -65,21 +65,21 @@ const CarDetails = ({isOpen, closeModel, car} : CarDetailsProps) => {
                                         <div className='flex gap-3'>
                                             <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
                                             {carImageURL ? (
-                                                <Image src={carImageURL} alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
+                                                <Image src='/hero.png' alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
                                             ) : (
                                                 <p className='text-xl text-emerald-400'>Loading image...</p>
                                             )}
                                             </div>
                                             <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
                                             {carImageURL ? (
-                                                <Image src={carImageURL} alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
+                                                <Image src='/hero.png' alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
                                             ) : (
                                                 <p className='text-xl text-emerald-400'>Loading image...</p>
                                             )}
                                             </div>
                                             <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
                                             {carImageURL ? (
-                                                <Image src={carImageURL} alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
+                                                <Image src='/hero.png' alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
                                             ) : (
                                                 <p className='text-xl text-emerald-400'>Loading image...</p>
                                             )}
