@@ -45,4 +45,8 @@ Welcome to the Car Shop Landing Page! This is a responsive and dynamic web appli
 
 
 
+## If you'd like to improve this project, feel free to fork the repository and add your imagination and creativity.
+
+
+
 
