@@ -33,3 +33,13 @@ Welcome to the Car Shop Landing Page! This is a responsive and dynamic web appli
 - The Car API fetches car data dynamically based on the user's search input.
 - The search and filter features allow users to find cars based on their preferences (brand, model, year, and gas type).
 - The interface is fully responsive, providing a great experience across all devices.
+
+
+Screenshots 📸
+
+<img width="1412" alt="Screenshot 2024-11-11 at 10 29 21 PM" src="https://github.com/user-attachments/assets/a364aa1c-3be8-4dc8-af4c-ba75ddbf7396">
+
+<img width="1396" alt="Screenshot 2024-11-11 at 10 30 01 PM" src="https://github.com/user-attachments/assets/3959bd22-16d7-4d8b-bcf0-6dd697f8a804">
+
+
+
