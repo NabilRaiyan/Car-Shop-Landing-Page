@@ -27,3 +27,9 @@ Welcome to the Car Shop Landing Page! This is a responsive and dynamic web appli
 
  - Run the development server: ``` npm run dev ```
  - Now, visit ```http://localhost:3000``` in your browser to see the car shop landing page in action!
+
+
+## How It Works ⚙️
+- The Car API fetches car data dynamically based on the user's search input.
+- The search and filter features allow users to find cars based on their preferences (brand, model, year, and gas type).
+- The interface is fully responsive, providing a great experience across all devices.
