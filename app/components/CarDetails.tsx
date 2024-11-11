@@ -2,9 +2,12 @@
 
 import { CarProps } from '@/types';
 import React from 'react'
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { Fragment } from 'react';
 import { Dialog, DialogPanel, Transition, TransitionChild } from '@headlessui/react';
+import { generateCarImageURL } from '@/utils';
+
 
 interface CarDetailsProps{
     isOpen: boolean,
@@ -12,7 +15,22 @@ interface CarDetailsProps{
     car: CarProps;
 }
 
+
+
+
 const CarDetails = ({isOpen, closeModel, car} : CarDetailsProps) => {
+    const [carImageURL, setCarImageURL] = useState<string | null>(null);
+
+    useEffect(() => {
+        const fetchImageURL = async () => {
+            const url = await generateCarImageURL(car);
+            setCarImageURL(url);
+        };
+    
+        fetchImageURL();
+    }, [car]);
+
+
   return (
     <>
     <Transition appear show={isOpen} as={Fragment}>
@@ -37,18 +55,34 @@ const CarDetails = ({isOpen, closeModel, car} : CarDetailsProps) => {
                                     </button>
                                     <div className='flex flex-1 gap-3 flex-col'>
                                         <div className='relative w-full h-40 bg-pattern bg-cover bg-center rounded'>
-                                            <Image src='/hero.png' alt='car model' fill priority className='object-contain'/>
+                                        {carImageURL ? (
+                                                <Image src='/hero.png' alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
+                                            ) : (
+                                                <p className='text-xl text-emerald-400'>Loading image...</p>
+                                            )}
                                         </div>
 
                                         <div className='flex gap-3'>
                                             <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
-                                                <Image src='/hero.png' alt='car model' fill priority className='object-contain'/>
+                                            {carImageURL ? (
+                                                <Image src={carImageURL} alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
+                                            ) : (
+                                                <p className='text-xl text-emerald-400'>Loading image...</p>
+                                            )}
                                             </div>
                                             <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
-                                                <Image src='/hero.png' alt='car model' fill priority className='object-contain'/>
+                                            {carImageURL ? (
+                                                <Image src={carImageURL} alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
+                                            ) : (
+                                                <p className='text-xl text-emerald-400'>Loading image...</p>
+                                            )}
                                             </div>
                                             <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
-                                                <Image src='/hero.png' alt='car model' fill priority className='object-contain'/>
+                                            {carImageURL ? (
+                                                <Image src={carImageURL} alt={`${car.make} ${car.model} model`} fill priority className='object-contain' />
+                                            ) : (
+                                                <p className='text-xl text-emerald-400'>Loading image...</p>
+                                            )}
                                             </div>
                                         </div>
                                     </div>
