@@ -44,8 +44,10 @@ Welcome to the Car Shop Landing Page! This is a responsive and dynamic web appli
 <img width="1391" alt="Screenshot 2024-11-11 at 10 40 26 PM" src="https://github.com/user-attachments/assets/d05d2df4-e477-4ffc-a708-ef2aba86da15">
 
 
+## License 📄
+#### This project is licensed under the ```MIT License - see the LICENSE file``` for details.
 
-## If you'd like to improve this project, feel free to fork the repository and add your imagination and creativity.
+
 
 
 
